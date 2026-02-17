@@ -39,14 +39,24 @@ export const ResumeSection = () => {
                     <div className="relative bg-surface rounded-2xl border border-neutral-800 overflow-hidden shadow-2xl transition-all duration-500 group-hover:border-accent/40 group-hover:translate-y-[-4px] group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]">
                         <div className="grid grid-cols-1 lg:grid-cols-2">
 
-                            {/* PDF Preview (Left) */}
-                            <div className="relative h-[650px] lg:h-[900px] bg-[#1A1412] overflow-hidden">
+                            {/* PDF Preview - Mobile: embed, Desktop: iframe */}
+                            <div className="relative h-[500px] lg:h-[900px] bg-[#1A1412] overflow-hidden">
                                 <div className="absolute inset-0 bg-neutral-900 animate-pulse"></div>
+
+                                {/* Mobile: embed tag */}
+                                <embed
+                                    src={resumePdf}
+                                    type="application/pdf"
+                                    className="lg:hidden w-full h-full relative z-10"
+                                />
+
+                                {/* Desktop: iframe */}
                                 <iframe
                                     src={resumePdf}
-                                    className="w-full h-full relative z-10 opacity-95 group-hover:opacity-100 transition-opacity"
+                                    className="hidden lg:block w-full h-full relative z-10 opacity-95 group-hover:opacity-100 transition-opacity"
                                     title="Resume Preview"
                                 />
+
                                 {/* Overlay Gradient for Premium Feel */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/10 via-transparent to-surface/20 pointer-events-none z-20"></div>
                             </div>

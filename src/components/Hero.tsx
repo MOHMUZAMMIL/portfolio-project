@@ -181,7 +181,7 @@ export const Hero = () => {
                     >
                         <a
                             href="#projects"
-                            className="group px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent-light transition-all flex items-center gap-2"
+                            className="group w-full px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent-light transition-all flex items-center justify-center gap-2"
                         >
                             View Projects
                             <span className="group-hover:translate-x-1 transition-transform">
@@ -193,7 +193,7 @@ export const Hero = () => {
                             download="Mohamed_Muzammil_Resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group px-6 py-3 bg-surface border border-neutral-800 text-white font-medium rounded-lg hover:border-accent/50 transition-all flex items-center gap-2"
+                            className="group w-full px-6 py-3 bg-surface border border-neutral-800 text-white font-medium rounded-lg hover:border-accent/50 transition-all flex items-center justify-center gap-2"
                         >
                             <Icons.Download />
                             Download Resume
