@@ -2,6 +2,110 @@ import { motion } from 'framer-motion';
 import { Icons } from './Icons';
 import resumePdf from '/Mohamed_Muzammil_ Resume.pdf';
 
+const MobileResumeUI = () => {
+    return (
+        <div className="w-full h-full bg-gradient-to-b from-white to-neutral-50 overflow-y-auto text-left">
+            {/* Header with Gradient */}
+            <div className="bg-gradient-to-br from-accent via-[#E65100] to-[#D84315] px-4 py-6 text-white">
+                <h1 className="text-2xl font-bold mb-1">Mohamed Muzammil</h1>
+                <p className="text-sm font-medium mb-2 opacity-95">React & React Native Developer</p>
+                <div className="text-[10px] space-y-0.5 opacity-90">
+                    <p>📧 contactmuzammil275@gmail.com</p>
+                    <p>💼 LinkedIn | 📍 India</p>
+                </div>
+            </div>
+
+            {/* Content Sections */}
+            <div className="px-4 py-3 space-y-4 text-[10px] leading-relaxed">
+                {/* Professional Summary */}
+                <section>
+                    <h2 className="text-accent font-bold text-[11px] mb-1.5 uppercase tracking-wide">Professional Summary</h2>
+                    <p className="text-neutral-700">
+                        Result-driven React & React Native Developer with 3+ years of experience building, optimizing, and deploying high-performance web and mobile applications. Strong expertise in React and React Native with a focus on performance optimization, clean architecture, and scalable, API-driven systems.
+                    </p>
+                </section>
+
+                {/* Education */}
+                <section className="bg-white rounded-lg p-3 shadow-sm border border-neutral-100">
+                    <h2 className="text-accent font-bold text-[11px] mb-2 uppercase tracking-wide">Education</h2>
+                    <div className="space-y-1.5">
+                        <div>
+                            <p className="font-semibold text-neutral-800">Master of Computer Application</p>
+                            <p className="text-neutral-600">MEASI Institute of Information Technology</p>
+                        </div>
+                        <div>
+                            <p className="font-semibold text-neutral-800">Bachelor of Computer Application</p>
+                            <p className="text-neutral-600">The New College (Autonomous)</p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Skills */}
+                <section>
+                    <h2 className="text-accent font-bold text-[11px] mb-2 uppercase tracking-wide">Skills</h2>
+                    <div className="space-y-2">
+                        <div>
+                            <p className="font-semibold text-neutral-800 mb-1">Technical Skills</p>
+                            <p className="text-neutral-700">React.js, Next.js, React Native, JavaScript (ES6+), TypeScript, HTML5, CSS3</p>
+                        </div>
+                        <div>
+                            <p className="font-semibold text-neutral-800 mb-1">State Management</p>
+                            <p className="text-neutral-700">Redux, React Hooks, React Query</p>
+                        </div>
+                        <div>
+                            <p className="font-semibold text-neutral-800 mb-1">UI/Styling</p>
+                            <p className="text-neutral-700">Tailwind CSS, Bootstrap, Shadcn UI, Material UI, Design-driven UI development</p>
+                        </div>
+                        <div>
+                            <p className="font-semibold text-neutral-800 mb-1">Tools & Build Systems</p>
+                            <p className="text-neutral-700">Webpack, Babel, Vite, Expo CLI, Android Studio</p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Experience */}
+                <section className="bg-white rounded-lg p-3 shadow-sm border border-neutral-100">
+                    <h2 className="text-accent font-bold text-[11px] mb-2 uppercase tracking-wide">Experience</h2>
+                    <div>
+                        <p className="font-bold text-neutral-800 mb-0.5">Digital Transformation Engineer</p>
+                        <p className="text-neutral-600 mb-1.5 text-[9px]">Ideasion Technology Solutions | Chennai, India | Dec 2022 – Present</p>
+                        <ul className="space-y-1 text-neutral-700 list-disc list-inside">
+                            <li>Led end-to-end feature development for web and mobile applications</li>
+                            <li>Integrated and optimized RESTful APIs with secure authentication flows</li>
+                            <li>Enhanced app performance by optimizing code and debugging complex issues</li>
+                            <li>Created reusable component libraries with clean frontend architecture</li>
+                            <li>Enabled location-based features using Google Maps API</li>
+                            <li>Designed billing, invoicing, and reporting interfaces for ERP systems</li>
+                        </ul>
+                    </div>
+                </section>
+
+                {/* Projects */}
+                <section>
+                    <h2 className="text-accent font-bold text-[11px] mb-2 uppercase tracking-wide">Projects</h2>
+                    <div className="space-y-2">
+                        <div className="bg-gradient-to-r from-neutral-50 to-white p-2.5 rounded border-l-2 border-accent">
+                            <p className="font-semibold text-neutral-800 mb-0.5">Chemical Manufacturing Company</p>
+                            <p className="text-neutral-700">Built React & React Native modules for managing role-based data breakdown with streamlined inventory records.</p>
+                        </div>
+                        <div className="bg-gradient-to-r from-neutral-50 to-white p-2.5 rounded border-l-2 border-accent">
+                            <p className="font-semibold text-neutral-800 mb-0.5">Global Paint Manufacturer</p>
+                            <p className="text-neutral-700">Implemented React-based wall paint selection and invoice generation system with finalized invoice documents.</p>
+                        </div>
+                        <div className="bg-gradient-to-r from-neutral-50 to-white p-2.5 rounded border-l-2 border-accent">
+                            <p className="font-semibold text-neutral-800 mb-0.5">Street Vendor Platform</p>
+                            <p className="text-neutral-700">Established innovative platform connecting street vendors with customers, enhancing local accessibility.</p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Bottom Padding */}
+                <div className="h-4"></div>
+            </div>
+        </div>
+    );
+};
+
 export const ResumeSection = () => {
     return (
         <section id="resume" className="py-32 px-6 md:px-12 lg:px-24 bg-background relative overflow-hidden">
@@ -39,16 +143,59 @@ export const ResumeSection = () => {
                     <div className="relative bg-surface rounded-2xl border border-neutral-800 overflow-hidden shadow-2xl transition-all duration-500 group-hover:border-accent/40 group-hover:translate-y-[-4px] group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]">
                         <div className="grid grid-cols-1 lg:grid-cols-2">
 
-                            {/* PDF Preview - Mobile: embed, Desktop: iframe */}
-                            <div className="relative h-[500px] lg:h-[900px] bg-[#1A1412] overflow-hidden">
+                            {/* Mobile Phone Mockup (Mobile) / PDF Preview (Desktop) */}
+                            <div className="relative h-[700px] lg:h-[900px] bg-[#1A1412] overflow-hidden flex items-center justify-center">
                                 <div className="absolute inset-0 bg-neutral-900 animate-pulse"></div>
 
-                                {/* Mobile: embed tag */}
-                                <embed
-                                    src={resumePdf}
-                                    type="application/pdf"
-                                    className="lg:hidden w-full h-full relative z-10"
-                                />
+                                {/* Mobile: Premium Phone Mockup with Custom Resume UI */}
+                                <div className="lg:hidden relative z-10 w-[320px] h-[650px]">
+                                    {/* Phone Frame */}
+                                    <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 via-neutral-900 to-black rounded-[45px] shadow-2xl border-[10px] border-neutral-900">
+                                        {/* Notch */}
+                                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[140px] h-[28px] bg-neutral-900 rounded-b-3xl z-20 flex items-center justify-center">
+                                            <div className="w-14 h-1 bg-neutral-800 rounded-full mt-2"></div>
+                                        </div>
+
+                                        {/* Screen */}
+                                        <div className="absolute inset-[5px] bg-white rounded-[37px] overflow-hidden">
+                                            {/* Status Bar */}
+                                            <div className="absolute top-0 left-0 right-0 h-[35px] bg-white z-10 flex items-center justify-between px-7 pt-2">
+                                                <span className="text-[11px] font-semibold text-neutral-900">9:41</span>
+                                                <div className="flex items-center gap-1.5">
+                                                    <svg className="w-4 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                                                    </svg>
+                                                    <div className="w-4 h-2.5 border-2 border-neutral-900 rounded-sm relative">
+                                                        <div className="absolute inset-[1px] bg-neutral-900 rounded-[1px]"></div>
+                                                        <div className="absolute -right-[2px] top-1/2 -translate-y-1/2 w-[2px] h-[6px] bg-neutral-900 rounded-r"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Resume Content */}
+                                            <div className="w-full h-full pt-[35px]">
+                                                <MobileResumeUI />
+                                            </div>
+                                        </div>
+
+                                        {/* Home Indicator */}
+                                        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[120px] h-[5px] bg-neutral-700 rounded-full"></div>
+                                    </div>
+
+                                    {/* Phone Shadow */}
+                                    <div className="absolute inset-0 rounded-[45px] shadow-[0_25px_70px_-15px_rgba(0,0,0,0.9)]"></div>
+
+                                    {/* Floating Download Button */}
+                                    <motion.a
+                                        href={resumePdf}
+                                        download
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        className="absolute bottom-16 right-4 w-14 h-14 bg-accent rounded-full shadow-lg flex items-center justify-center z-30 hover:shadow-[0_0_25px_rgba(255,107,53,0.6)] transition-all"
+                                    >
+                                        <Icons.Download className="text-white" />
+                                    </motion.a>
+                                </div>
 
                                 {/* Desktop: iframe */}
                                 <iframe
@@ -61,7 +208,7 @@ export const ResumeSection = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/10 via-transparent to-surface/20 pointer-events-none z-20"></div>
                             </div>
 
-                            {/* Info Panel (Right) - Desktop Only or Stacked Mobile */}
+                            {/* Info Panel (Right) */}
                             <div className="p-8 lg:p-10 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-neutral-800 bg-surface/50 backdrop-blur-sm">
                                 <div>
                                     <h3 className="text-2xl font-bold text-white mb-2">Mohamed Muzammil</h3>
