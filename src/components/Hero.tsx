@@ -109,11 +109,10 @@ export const Hero = () => {
                         animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
                         style={{
-                            height: '92vh',
+                            height: '72vh',
                             width: '100%',
                             objectFit: 'contain',
                             objectPosition: 'bottom center',
-                            marginTop: '-250px',
                             display: 'block',
                         }}
                         className="grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-out"

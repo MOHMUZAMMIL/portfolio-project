@@ -42,13 +42,11 @@ const tabs: Tab[] = [
         logs: [
             { type: 'info', text: '→ Establishing RESTful API connections...' },
             { type: 'success', text: '✓ Axios interceptors configured' },
-            { type: 'accent', text: '→ Implementing GraphQL client (Apollo)...' },
             { type: 'success', text: '✓ Query optimization enabled' },
             { type: 'info', text: '→ Secure authentication flow established' },
             { type: 'success', text: '✓ JWT token refresh mechanism active' },
             { type: 'accent', text: '→ Role-based access control implemented' },
             { type: 'success', text: '✓ Permission guards deployed' },
-            { type: 'info', text: '→ Real-time WebSocket connection initialized' },
             { type: 'success', text: '✓ Live data synchronization active' },
         ],
     },
@@ -62,11 +60,9 @@ const tabs: Tab[] = [
             { type: 'success', text: '✓ Score: 98/100' },
             { type: 'accent', text: '→ Implementing service worker caching...' },
             { type: 'success', text: '✓ Offline-first strategy enabled' },
-            { type: 'info', text: '→ Image optimization pipeline active' },
             { type: 'success', text: '✓ WebP conversion + lazy loading applied' },
             { type: 'accent', text: '→ Critical CSS extraction complete' },
             { type: 'success', text: '✓ First Contentful Paint: 0.8s' },
-            { type: 'info', text: '→ Tree-shaking unused dependencies...' },
             { type: 'success', text: '✓ Production bundle: 142KB gzipped' },
         ],
     },
@@ -77,12 +73,9 @@ const tabs: Tab[] = [
         subtitle: 'PRODUCTION SYSTEMS',
         logs: [
             { type: 'info', text: '→ Deploying e-commerce platform (React + Node)...' },
-            { type: 'success', text: '✓ Payment gateway integrated (Stripe/Razorpay)' },
             { type: 'accent', text: '→ ERP system modules initializing...' },
             { type: 'success', text: '✓ Inventory, CRM, Analytics modules live' },
-            { type: 'info', text: '→ Multi-tenant architecture configured' },
             { type: 'success', text: '✓ Data isolation verified' },
-            { type: 'accent', text: '→ CI/CD pipeline established (GitHub Actions)' },
             { type: 'success', text: '✓ Automated testing + deployment active' },
             { type: 'info', text: '→ Monitoring & logging systems online' },
             { type: 'success', text: '✓ Sentry error tracking + analytics enabled' },
@@ -212,10 +205,10 @@ export const DeveloperCenter = () => {
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3 }}
                                             className={`mb-2 ${line.type === 'success'
-                                                    ? 'text-accent-light'
-                                                    : line.type === 'accent'
-                                                        ? 'text-accent'
-                                                        : 'text-neutral-400'
+                                                ? 'text-accent-light'
+                                                : line.type === 'accent'
+                                                    ? 'text-accent'
+                                                    : 'text-neutral-400'
                                                 }`}
                                         >
                                             {line.text}
