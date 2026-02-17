@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Icons } from './Icons';
+import resumePdf from '/Mohamed_Muzammil_ Resume.pdf';
 
 export const CTA = () => {
     return (
@@ -56,7 +57,7 @@ export const CTA = () => {
 
                     {/* Resume Button */}
                     <a
-                        href="/Mohamed_Muzammil_ Resume.pdf"
+                        href={resumePdf}
                         download="Mohamed_Muzammil_Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"

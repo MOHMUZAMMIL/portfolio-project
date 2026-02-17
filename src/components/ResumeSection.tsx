@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Icons } from './Icons';
+import resumePdf from '/Mohamed_Muzammil_ Resume.pdf';
 
 export const ResumeSection = () => {
     return (
@@ -42,7 +43,7 @@ export const ResumeSection = () => {
                             <div className="relative h-[650px] lg:h-[900px] bg-[#1A1412] overflow-hidden">
                                 <div className="absolute inset-0 bg-neutral-900 animate-pulse"></div>
                                 <iframe
-                                    src="/Mohamed_Muzammil_%20Resume.pdf"
+                                    src={resumePdf}
                                     className="w-full h-full relative z-10 opacity-95 group-hover:opacity-100 transition-opacity"
                                     title="Resume Preview"
                                 />
@@ -83,7 +84,7 @@ export const ResumeSection = () => {
 
                                 <div className="mt-10 lg:mt-0">
                                     <motion.a
-                                        href="/Mohamed_Muzammil_%20Resume.pdf"
+                                        href={resumePdf}
                                         download
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.98 }}

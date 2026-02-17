@@ -1,6 +1,7 @@
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Icons } from './Icons';
+import resumePdf from '/Mohamed_Muzammil_ Resume.pdf';
 
 export const StickyResumeButton = () => {
     const { scrollY } = useScroll();
@@ -19,7 +20,7 @@ export const StickyResumeButton = () => {
         <AnimatePresence>
             {isVisible && (
                 <motion.a
-                    href="/Mohamed_Muzammil_%20Resume.pdf"
+                    href={resumePdf}
                     download
                     initial={{ scale: 0, opacity: 0, rotate: 180 }}
                     animate={{ scale: 1, opacity: 1, rotate: 0 }}

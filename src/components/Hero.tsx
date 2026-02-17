@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Icons } from './Icons';
+import bgMuzu from '/bg_muzu.png';
+import resumePdf from '/Mohamed_Muzammil_ Resume.pdf';
 
 export const Hero = () => {
     return (
@@ -86,7 +88,7 @@ export const Hero = () => {
                             </span>
                         </a>
                         <a
-                            href="/Mohamed_Muzammil_ Resume.pdf"
+                            href={resumePdf}
                             download="Mohamed_Muzammil_Resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -101,7 +103,7 @@ export const Hero = () => {
                 {/* RIGHT – Image (55%) — wrapper is the positioning context */}
                 <div style={{ flex: '0 0 55%', maxWidth: '55%', position: 'relative' }}>
                     <motion.img
-                        src="/bg_muzu.png"
+                        src={bgMuzu}
                         alt="Mohamed Muzammil"
                         initial={{ opacity: 0, x: 40, filter: 'blur(10px)' }}
                         animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
@@ -187,7 +189,7 @@ export const Hero = () => {
                             </span>
                         </a>
                         <a
-                            href="/Mohamed_Muzammil_ Resume.pdf"
+                            href={resumePdf}
                             download="Mohamed_Muzammil_Resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -208,7 +210,7 @@ export const Hero = () => {
                     className="flex justify-center"
                 >
                     <img
-                        src="/bg_muzu.png"
+                        src={bgMuzu}
                         alt="Mohamed Muzammil"
                         className="w-[85%] h-auto object-contain grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-out"
                     />
