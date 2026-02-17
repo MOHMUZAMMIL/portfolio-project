@@ -215,7 +215,7 @@ export const CareerTimeline = () => {
     });
 
     return (
-        <section className="relative py-32 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#0F0B09] to-[#140E0C] border-t border-white/5 overflow-hidden">
+        <section id="experience" className="relative py-32 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#0F0B09] to-[#140E0C] border-t border-white/5 overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[150px] pointer-events-none" />
 

@@ -4,7 +4,7 @@ import resumePdf from '/Mohamed_Muzammil_ Resume.pdf';
 
 const MobileResumeUI = () => {
     return (
-        <div className="w-full h-full bg-gradient-to-b from-white to-neutral-50 overflow-y-auto text-left">
+        <div className="w-full h-full bg-gradient-to-b from-white to-neutral-50 overflow-y-scroll text-left" style={{ WebkitOverflowScrolling: 'touch' }}>
             {/* Header with Gradient */}
             <div className="bg-gradient-to-br from-accent via-[#E65100] to-[#D84315] px-4 py-6 text-white">
                 <h1 className="text-2xl font-bold mb-1">Mohamed Muzammil</h1>
@@ -173,7 +173,7 @@ export const ResumeSection = () => {
                                             </div>
 
                                             {/* Resume Content */}
-                                            <div className="w-full h-full pt-[35px]">
+                                            <div className="absolute top-[35px] left-0 right-0 bottom-0">
                                                 <MobileResumeUI />
                                             </div>
                                         </div>
@@ -183,7 +183,7 @@ export const ResumeSection = () => {
                                     </div>
 
                                     {/* Phone Shadow */}
-                                    <div className="absolute inset-0 rounded-[45px] shadow-[0_25px_70px_-15px_rgba(0,0,0,0.9)]"></div>
+                                    <div className="absolute inset-0 rounded-[45px] shadow-[0_25px_70px_-15px_rgba(0,0,0,0.9)] pointer-events-none"></div>
 
                                     {/* Floating Download Button */}
                                     <motion.a

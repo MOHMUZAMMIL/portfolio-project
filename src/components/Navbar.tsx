@@ -25,7 +25,7 @@ export const Navbar = () => {
             >
                 <div className="flex items-center gap-2">
                     <span className="font-bold text-lg tracking-tight text-white">
-                        Muzammil<span className="text-accent">.</span>
+                        PORT<span className="text-accent">FOLIO</span>
                     </span>
                 </div>
 
